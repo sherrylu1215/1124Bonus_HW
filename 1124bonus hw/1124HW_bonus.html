@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .bonus-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+        .form-container {
+            width: 70%; /* 調整表格寬度 */
+    margin: auto; /* 新增這行使表格水平居中 */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+        }
+
+        .form-row {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+            width: 100%; /* 新增這行設置所有 form-row 寬度為 100% */
+        }
+
+        .form-row label {
+            flex: 1;
+            margin-bottom: 0; /* 將 margin-bottom 設置為 0，以確保標題和輸入框緊密排列 */
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-row input,
+        .form-row textarea {
+            flex: 4.5;
+            width: calc(100% - 20px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-row input::placeholder {
+            color: #ccc; /* 設置 placeholder 字體顏色 */
+        }
+
+        .form-row textarea::placeholder {
+            color:black; /* 設置 placeholder 字體顏色 */
+        }
+
+        .form-row.input2-row label,
+        .form-row.input2-row input {
+            margin-bottom: 20px; /* 將 input2 與其他列的輸入框垂直間距設置為相同 */
+        }
+
+        .form-row.input2-row input,
+        .form-row.input2-row textarea {
+            flex: 1.5; /* 設置第二列的輸入框為 1.5（50%）的寬度 */
+            margin-right: 20px; /* 添加右邊的間距 */
+        }
+
+        .form-row textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        .form-row img {
+            width: 82%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .form-row input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-row input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <title>HTML Form</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="bonus-title">Bonus HW</div>
+
+    <div class="form-container">
+        <div class="form-row">
+            <label for="input1">Input1</label>
+            <input type="text" id="input1" name="input1" placeholder="input1">
+        </div>
+
+        <div class="form-row input2-row">
+            <label for="input2">Input2</label>
+            <input type="text" id="input2" name="input2" placeholder="input2">
+            <label for="input3">   Input3</label>
+            <input type="text" id="input3" name="input3" placeholder="input3">
+        </div>
+
+        <div class="form-row">
+            <label for="input4">Input4</label>
+            <input type="text" id="input4" name="input4" placeholder="input4">
+        </div>
+
+        <div class="form-row">
+            <label for="textarea">Textarea</label>
+            <textarea id="textarea" name="textarea" placeholder="make it not resizable"></textarea>
+        </div>
+
+        <div class="form-row">
+            <label for="image">Picture1</label>
+            <img src="picture.jpg" alt="Image">
+        </div>
+
+        
+    </div>
+
+</body>
+</html>
